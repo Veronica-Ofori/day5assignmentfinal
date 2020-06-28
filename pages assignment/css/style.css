@@ -1,0 +1,140 @@
+body{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5em;
+}
+
+/* navigation area styling begins*/
+#header{
+    background: #000;
+    font-family: Arial;
+    height: 100px;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    float: left;
+    border-right: 1px dotted #bbb;
+}
+
+li a{
+    display: block;
+    color: #fff;
+    text-align:center;
+    padding:14px 16px;
+    text-decoration:none;
+}
+
+
+li a:hover:not(.active){
+    background-color: #352121;
+}
+
+
+.active{
+    background-color: #0099ff;
+
+}
+/* navigation area styling ends*/
+
+
+/* Content Wrapper area begins*/
+
+#contententwrapper{
+    float:left;
+    width: 100%;
+}
+
+#contentcolumn{
+    margin: 0 230px 0 230px;
+}
+
+
+.innertext{
+    margin: 20px;
+    font-family: Arial;
+    color:#5E5E5e;
+}
+/* Content Wrapper area ends*/
+
+/* left column begins */
+    
+#leftcolumn{
+    float: left;
+    width: 230px;
+    margin-left: -100%;
+    background: #24c8ff
+}
+
+/* left column ends */
+
+/* Right column styling begins */
+
+#rightcolumn{
+    float:left;
+    width: 230px;
+    margin-left: -230px;
+    background: #fffb00
+}
+/* Right column styling ends */
+
+/* footer styling begins */
+
+
+#footer{
+    clear: left;
+    width: 100%;
+    background:black;
+    color: #fff;
+    font-family: Arial;
+    text-align: center;
+    padding: 4px;
+}
+
+
+/* footer styling ends */
+/* about styling begin */
+#textabout{
+    text-align: center;
+    color: green;
+}
+/* about styling ends*/
+
+/* responsive layout CSS */
+@media (max-width:840px){
+#leftcolumn{
+    margin-left:-100%;
+}
+#rightcolumn{
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    clear: both;
+}
+#contentcolumn{
+    margin-right: 0;
+}
+}
+/* end of 840px screen */
+
+/* beginnig of 600px screen */
+@media (max-width:600px){
+
+#leftcolumn{
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    clear: both;
+    background-color: red;
+}
+#contentcolumn{
+    margin-left: 0;
+}
+
+}
+/* end of 600px screen */
